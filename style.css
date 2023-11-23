@@ -11,6 +11,7 @@ body {
 
 body::-webkit-scrollbar {
   width: 12px;               /* width of the entire scrollbar */
+ 
 }
 
 body::-webkit-scrollbar-track {
@@ -93,10 +94,11 @@ div.direita{
 }
   #logo{
     width: auto;
-    height: 5.3vw;
+    height: 6.3vw;
     object-fit: fill; 
     padding: 0.2vw;
     transition: .5s;    
+    transform: scaleX(-1);
   }
   #logo:hover{
     opacity: 0.6;
@@ -251,7 +253,8 @@ h3{
   margin: auto;
 }
 .catalogo::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 10px;               /* width of the entire scrollbar */
+
 }
 
 .catalogo::-webkit-scrollbar-track {
@@ -334,7 +337,96 @@ color:white;
 
 /* Mobile */
 @media all and (max-width: 800px){
- 
+  /* header */
+div#header { 
+    height: 7vw;
+}
+div#header a#texto:link, a#texto:visited { 
+    font-size: 3vw;
+    margin: 1% 1.5%;
+  }
+#logo{ 
+    height: 9vw;    
+  }
+#carrinho{
+    height: 5.6vw;
+    padding-left: 2.6vw;  
+  }
+/* header */
+
+
+.catalogo::-webkit-scrollbar {
+  width: 6px;               /* width of the entire scrollbar */
+  height: 10px;
+}
+.catalogo::-webkit-scrollbar-track {
+   background: #291A2C;        /* color of the tracking area */
+}
+
+.catalogo::-webkit-scrollbar-thumb {
+  background-color: #F6C6FA;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #291A2C;  /* creates padding around scroll thumb */
+}
+p{
+  font-size: 2.8vw;
+  color: #fff;
+}
+h1{
+  font-size: 5vw;
+}
+h3{
+  font-size: 3vw;
+  color: #fff;
+}
+
+.carousel {
+  margin: auto;
+  width: 100vw;
+  height: 50vw;
+  position: relative;
+
+}
+
+
+.navigation label {
+  width: 3vw;
+  height: 3vw;
+  border: 0.2vw solid #291A2C;
+  margin: 1vw; 
+}
+
+
+.itemcat{
+  width: 13vw;
+  height: 20vw;
+  padding: 0.50vw;
+  margin-inline: 2.6vw;
+}
+
+#imgcat{
+  height: 12vw;
+  width: 12vw;
+  border-radius: 100%;
+}
+.item{
+  width: 13vw;
+  height: 30vw;
+  padding: 1vw;
+  margin-inline: 7vw;
+
+}
+#livro{
+  width: 19.5vw;
+  height: 24.5vw;
+}
+
+
+
+
+
+
+
 
 
 }
@@ -344,4 +436,3 @@ color:white;
 
 
 /* Fim mobile */
-
