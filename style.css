@@ -356,18 +356,9 @@ div#header a#texto:link, a#texto:visited {
 
 
 .catalogo::-webkit-scrollbar {
-  width: 6px;               /* width of the entire scrollbar */
-  height: 10px;
-}
-.catalogo::-webkit-scrollbar-track {
-   background: #291A2C;        /* color of the tracking area */
+    display: none;
 }
 
-.catalogo::-webkit-scrollbar-thumb {
-  background-color: #F6C6FA;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid #291A2C;  /* creates padding around scroll thumb */
-}
 p{
   font-size: 2.8vw;
   color: #fff;
