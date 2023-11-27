@@ -57,7 +57,7 @@ div#header a#texto:link, a#texto:visited {
     0 0 1vw #8f03c7; 
     text-decoration: none;
     margin: 1% 5%;
-    font-size: 1.5vw;
+    font-size: 2vw;
  
     transition: .5s;
   }
@@ -65,7 +65,7 @@ div#header a#texto:link, a#texto:visited {
   div#header a#texto:hover{
     text-decoration:  underline white;
     text-decoration-thickness: 0.05vw;
-    font-size: 2vw;
+    font-size: 2.5vw;
     color: white;
     transition: .5s;
   }
@@ -94,7 +94,7 @@ div.direita{
 }
   #logo{
     width: auto;
-    height: 6.3vw;
+    height: 8vw;
     object-fit: fill; 
     padding: 0.2vw;
     transition: .5s;    
@@ -313,6 +313,7 @@ form{
   display: flex;
   flex-direction: row;
   height: auto;
+  width: 100%;
   position: absolute;
   bottom: 1;
   right: 0;
@@ -320,10 +321,42 @@ form{
   align-items: center;
   justify-content: center;
 
+
 }
- .contatos{
+textarea{
+  background-color: #F6C6FA;
+   border: 5px solid #993399;
+  border-radius: 2px;
+  border-style: outset
+}
+
+.contatos input{
+  border: 2px solid red;
+  border-radius: 4px;
+  border-style: outset
+}
+input[type=submit]{
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input:focus {
+  border: 5px solid #555;
+  border-radius: 2px;
+  border-style: outset;
+}
+.contatos{
   padding: 3vw;
- }
+  width: 30vw;
+  height: auto;
+} 
+.contato{
+  text-align: center;
+}
  .contatos label{
 color:white;
 
@@ -331,99 +364,3 @@ color:white;
  label,input{
  height: auto;
 
-
- }
-/* Fim Footer */
-
-/* Mobile */
-@media all and (max-width: 800px){
-  /* header */
-div#header { 
-    height: 7vw;
-}
-div#header a#texto:link, a#texto:visited { 
-    font-size: 3vw;
-    margin: 1% 1.5%;
-  }
-#logo{ 
-    height: 9vw;    
-  }
-#carrinho{
-    height: 5.6vw;
-    padding-left: 2.6vw;  
-  }
-/* header */
-
-
-.catalogo::-webkit-scrollbar {
-    display: none;
-}
-
-p{
-  font-size: 2.8vw;
-  color: #fff;
-}
-h1{
-  font-size: 5vw;
-}
-h3{
-  font-size: 3vw;
-  color: #fff;
-}
-
-.carousel {
-  margin: auto;
-  width: 100vw;
-  height: 50vw;
-  position: relative;
-
-}
-
-
-.navigation label {
-  width: 3vw;
-  height: 3vw;
-  border: 0.2vw solid #291A2C;
-  margin: 1vw; 
-}
-
-
-.itemcat{
-  width: 13vw;
-  height: 20vw;
-  padding: 0.50vw;
-  margin-inline: 2.6vw;
-}
-
-#imgcat{
-  height: 12vw;
-  width: 12vw;
-  border-radius: 100%;
-}
-.item{
-  width: 13vw;
-  height: 30vw;
-  padding: 1vw;
-  margin-inline: 7vw;
-
-}
-#livro{
-  width: 19.5vw;
-  height: 24.5vw;
-}
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-/* Fim mobile */
