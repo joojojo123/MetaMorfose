@@ -364,3 +364,119 @@ color:white;
  label,input{
  height: auto;
 
+
+ }
+/* Fim Footer */
+
+/* Mobile */
+@media all and (max-width: 800px){
+
+  /* header */
+div#header { 
+    height: 7vw;
+}
+div#header a#texto:link, a#texto:visited { 
+    font-size: 3vw;
+    margin: 1% 1.5%;
+  }
+#logo{ 
+    height: 14vw;    
+  }
+#carrinho{
+    height: 9vw;
+    padding-left: 2.6vw;  
+  }
+/* header */
+
+
+.catalogo::-webkit-scrollbar {
+    display: none;
+}
+
+p{
+  font-size: 2.8vw;
+  color: #fff;
+}
+h1{
+  font-size: 5vw;
+}
+h3{
+  font-size: 3vw;
+  color: #fff;
+}
+
+.carousel {
+  margin: auto;
+  width:99%;
+  height: 50vw;
+  position: relative;
+
+}
+
+
+.navigation label {
+  width: 3vw;
+  height: 3vw;
+  border: 0.2vw solid #291A2C;
+  margin: 1vw; 
+}
+
+
+.itemcat{
+  width: 13vw;
+  height: 20vw;
+  padding: 0.50vw;
+  margin-inline: 2.6vw;
+}
+
+#imgcat{
+  height: 12vw;
+  width: 12vw;
+  border-radius: 100%;
+}
+.item{
+  width: 13vw;
+  height: 30vw;
+  padding: 1vw;
+  margin-inline: 7vw;
+
+}
+#livro{
+  width: 19.5vw;
+  height: 24.5vw;
+}
+
+
+form{
+  background-image: linear-gradient( #0e0e0e,#291A2C, #291A2C);
+  display: flex;
+  flex-direction:column;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  bottom: 1;
+  right: 0;
+  left: 0;
+ 
+
+}
+.contatos{
+  text-align: center;
+}
+textarea{
+  width: 50vw;
+   
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+/* Fim mobile */
