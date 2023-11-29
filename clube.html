@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="header" class="a">
+            <a  href="index.html"> <img src="img/logo.png" id="logo"></a>
+    
+            <div class="direita">
+              
+              <a  href="catalogo.html"> <img src="img/carrinho.png" id="carrinho"></a>
+            </div> 
+    
+        </div>
+      </header>   
+        <div id="header" class="b">
+        
+          <a id="texto" href="catalogo.html">Catálogo</a>
+        
+          <a id="texto" href="clube.html">Clube do livro</a>
+        
+        </div>
+
+
+        <div class="principal">
+          <h1 >Sobre nós, os uivadores:</h1>
+          <p>Nós da Metamoforse, buscando proporcionar ainda mais momentos e conectar
+              ainda mais leitores, resolvemos fundar o clube do livro "Os Uivadores",
+              a dona que vós escreve, Maria, completamente apaixonada pela saga Red Rising é a 
+              responsável pelo nome. Um clube para desvendar-se nos livros com companhia onde
+              todo mês é escolhido um livro diferente e no último final de semana acontece o debate
+              em nossa sede (com direito a coffebreak depois de calorosas discusões), ou muitas vezes de forma online
+              através de aplicativos de chamadas de vídeos.
+          </p>
+          <p>Além de que também nossos assinantes uivadores recebem novidades exclusivas que chegam em 
+              nossa loja, fora o direito as nossas ginganas realizadas nos dias de debates dos livros
+              lidos. Ademais, assinando nosso clube do livro você também garante receber na sua casa
+              todo o mês o livro escolhido, onde a escolha acontece por meio de votação (viva a demicracia!).<br> 
+              Para participar é super fácil:<br>
+                  <ul>
+                      <li>Decidir se juntar ao melhor clube do livro da cidade</li>
+                      <li>Clicar aqui no nosso card de assinatura</li>
+                      <li>Preencher o formulário corretamente com seus dados e Pronto!</li>
+                  </ul>
+              </p>
+              <p>As outras informações pertinentes vão estar no seu email.</p>
+          <br>
+          <div class="plano">
+              <img src="img/lobo.png" id="imgUiva">
+              <h4>Os Uivadores te esperam!</h4>
+              <a href="./formclube.html" target="_blank">
+                  <p id="pPlano">R$ 25,00 mensais</p>
+              </a>
+          </div>
+      </div>
+
+        <div class="container">
+
+          <div>
+          <h1>Leitura do mês</h1>
+          <img id="livroespecial" src="livros/estrela.jpg">
+          </div>
+
+          <div id="contador">
+          <h3>Data do Encontro<br>30/11</h3>
+          <h3>Faltam...</h3>
+            <div class="contador">
+              
+              <div id="dias">0<br><br>dias</div>
+              <div id="horas">0<br><br>hrs</div>
+              <div id="minutos">0<br><br>min</div>
+              <div id="segundos">0<br><br>seg</div>
+              <script>
+                //a variável dataFutura recebe a data que zerará a contagem regressiva 
+                  var dataFutura = new Date("November 30, 2023 23:59").getTime();
+                  //a função setValores está presente para otimizar a forma de apresentar os valores de dias,
+                  //horas, minutos e segundos na tela, onde dentro dessa função já tem o document.getElementById
+                  function setValores(e, valorExibido, uniTempo) {
+                      return document.getElementById(e).innerHTML = valorExibido + "<br><br>" + uniTempo;
+                  }
+                  var dias, horas, minutos, segundos;
+                  //Foi definido a função setInterval para que a contagem regressiva se atualize a cada um segundo
+                  setInterval(function(){
+                      //a variável datAtual captura a data atual
+                      var dataAtual = new Date().getTime();
+                      var segundosTotal = (dataFutura - dataAtual)/1000;
+                      dias = parseInt(segundosTotal/86400);
+                      segundosTotal = segundosTotal%86400;
+                      horas = parseInt(segundosTotal/3600);
+                      segundosTotal = segundosTotal%3600;
+                      minutos = parseInt(segundosTotal/60);
+                      segundos = parseInt(segundosTotal%60);
+
+                      setValores("dias", dias, "dias");
+                      setValores("horas", horas, "hr");
+                      setValores("minutos", minutos, "min");
+                      setValores("segundos", segundos, "seg");
+                  },1000);
+              </script>
+              </div>
+          </div>
+        </div>
+
+
+        
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

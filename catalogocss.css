@@ -1,0 +1,358 @@
+body {
+    margin: 0;
+    background-color: black;
+
+}
+/* Header */
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 14;
+
+    width: auto;
+    margin: auto;
+    min-width: 100%;
+}
+
+div#header {
+    right: inherit;
+    height: 3.6vw;
+    padding: auto;
+    letter-spacing: 0.05vw;
+    display: flex;
+    flex-direction: row;
+    color: #eeeac1;
+    font-weight: bold;
+    z-index: 13;
+}
+
+div#header a#texto:link, a#texto:visited {
+    white-space: nowrap;
+    color: #F6C6FA;
+    text-shadow:
+    0 0 0.3vw #F6C6FA,
+    0 0 0.5vw #bc13fe,
+    0 0 1vw #8f03c7; 
+    text-decoration: none;
+    margin: 1% 5%;
+    font-size: 2vw;
+ 
+    transition: .5s;
+  }
+  
+  div#header a#texto:hover{
+    text-decoration:  underline white;
+    text-decoration-thickness: 0.05vw;
+    font-size: 2.5vw;
+    color: white;
+    transition: .5s;
+  }
+  .a{
+    background-image: linear-gradient(#993399, #562c56);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+   
+  }
+  .b{
+    background-image: linear-gradient(#562c56, black);
+    z-index: 14;
+    justify-content: center;
+    top: 0;
+    position: sticky;
+    height: inherit;
+   } 
+ 
+div.direita{
+  margin-left: auto; 
+  display: flex;
+  flex-direction: row;
+  margin-right: 5%;
+  padding: 0.2vw;
+}
+  #logo{
+    width: auto;
+    height: 8vw;
+    object-fit: fill; 
+    padding: 0.2vw;
+    transition: .5s;    
+    transform: scaleX(-1);
+  }
+  #logo:hover{
+    opacity: 0.6;
+    transition: .5s;
+  }
+
+  #carrinho{
+    width: auto;
+    height: 3.6vw;
+    object-fit: fill;
+    padding-top: 0.5vw;
+    padding-left: 2.6vw;
+    transition: .5s;
+  }
+  #carrinho:hover{
+    opacity: 0.6;
+    transition: .5s;
+  }
+  
+  
+/* Fim Header */
+
+::placeholder {
+    color: #fff;
+}
+option {
+    color: #fff;
+}
+select {
+    color: #fff;
+    border-radius: 8px;
+    border:none;
+    width: 20vw;
+    padding: 12px 15px;
+    margin: 3vw 3vw;
+    box-sizing: border-box;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    outline: none;
+    background-color: #562c56;
+    display: inline-block;
+}
+select:focus {
+    background-color: #562c56;
+    border-radius: 8px;
+    border: #F6C6FA 2px solid;
+    -webkit-transition: 0.2;
+    transition: 0.2;
+    outline: none;
+}
+
+::-webkit-scrollbar {
+    background-color: #291A2C;
+    width: 12px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #F6C6FA;
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #291A2C;
+}
+option {
+    font-weight: normal;
+    display: block;
+    white-space-collapse: collapse;
+    text-wrap: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+#barrabusca {
+    top: auto;
+    display: inline-block;
+    margin-left: 35vw;
+}
+#buscalivro {
+    margin-top: -20vw;
+    top: 0vw;
+    border-radius: 8px;
+    border: none;
+    width: 20vw;
+    padding: 12px 15px;
+    background-color: #562c56;
+    margin-left: 0vw;
+    display: inline-block;
+}
+#btnbusca{
+    border-radius: 8px;
+    border: none;
+    width: 1.5vw;
+    display: inline-block;
+}
+.carrinho {
+    display: none;
+}
+.carrinho-visivel {
+    display: block;
+    position: relative;
+    width: 50vw;
+    left: 25vw;
+    border: 1px solid #291A2C;
+    border-radius: 10px;
+    background-color: #0e0e0e;
+    color: #F6C6FA;
+    padding: 18px;
+    box-sizing: border-box;
+}
+.remover-item {
+    background-color: #f50909;
+    color: #fff;
+    border-radius: 90px;
+    width: 2.5vw;
+    height: 2.5vw;
+    right: 2vw;
+    border: 1px solid #f50909;
+}
+.fechar-carrinho {
+    background-color: #f50909;
+    color: #fff;
+    border-radius: 10px;
+    width: 9vw;
+    height: 2.1vw;
+    border: 1px solid #f50909;
+}
+.finalizar-compras {
+    background-color: rgb(45, 171, 7);
+    color: #fff;
+    border-radius: 10px;
+    width: 9vw;
+    height: 2.1vw;
+    display: block;
+    
+    margin-top: 1vw;
+    border: 1px solid rgb(45, 171, 7);
+}
+p{
+    font-size: 0.8vw;
+    color: #fff;
+  }
+  .txtgrande{
+    margin: auto;
+    padding: auto;
+    text-align: center;
+  }
+  
+  h1{
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    
+    color: #F6C6FA;
+    text-shadow:
+    0 0 0.3vw #F6C6FA,
+    0 0 0.5vw #bc13fe,
+    0 0 1vw #8f03c7; 
+  }
+  
+  h3{
+    font-size: 1vw;
+    color: #fff;
+    text-shadow:
+    0 0 0.3vw #F6C6FA,
+    0 0 0.5vw #bc13fe,
+    0 0 1vw #8f03c7;  
+    text-transform: uppercase;
+  
+  }
+  
+  
+.total-compra {
+    text-align: center;
+}
+li {
+    margin: 12px;
+}
+
+.bntMostrarCarrinho {
+    background-color: transparent;
+    border: none;
+    width: auto;
+    height: 3.6vw;
+    object-fit: fill;
+    padding-top: 0.5vw;
+    padding-left: 2.6vw;
+    transition: .5s;
+}
+
+.adicionar-carrinho {
+    border-radius: 40px;
+    background-color: #fff;
+    text-align: center;
+
+}
+#iconcora, #iconcarro {
+    width: 2.5vw;
+}
+#iconcarro {
+    margin-left: 0vw;
+    align-items: center;
+}
+
+.livros-container {
+    display: -ms-inline-flexbox;
+    position: relative;
+    width: 21vw;
+    height: 31vw;
+    display: inline-block;
+    margin-left: 8.5vw;
+    border: 1px solid #F6C6FA;
+    margin-top: 8vw;
+    transition: color 0.4s, border-color 0.4s;
+    
+}
+.livros-container::before,
+.livros-container::after {
+  border: 1px solid #bc13fe;
+  opacity: 0;
+  transition: opacity 0.4s, transform 0.4s;
+}
+.livros-container::before{
+    z-index: -1;
+    mix-blend-mode: overlay;
+}
+  
+.livros-container::after {
+    z-index: -2;
+    filter: blur(20px);
+}
+  
+.livros-container:hover {
+    border: 4px solid #bc13fe;
+    color: #bc13fe;
+    border-color: #bc13fe;
+  }
+  
+.livros-container:hover::before,
+.livros-container:hover::after {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+.caixa {
+    margin: 10%;
+    position: relative;
+    height: 1vw;
+    width: 100%;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 1px;
+}
+img {
+    max-width: 100%;
+    height: auto;   
+}
+.after  {
+    color: lightgray;
+    opacity: 60%;
+    width: 67%;  
+    top: 10px;
+    left: 10px; 
+    right: 30px;
+    position: absolute;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 72%;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 0.3s;
+}
+.after {
+    background-color: #291A2C;
+}
+.livros-container:hover .after{
+    opacity: 1;
+}
+.livros-container:hover {
+    background-color: #291A2C;
+}
+

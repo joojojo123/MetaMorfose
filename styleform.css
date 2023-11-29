@@ -1,0 +1,80 @@
+body {
+    margin: 0%;
+    font-family: Verdana, Helvetica, Tahoma, sans-serif;
+    background-image: url("./fundopet.jpg");
+    color: lightgray;
+    background-color: #50388c;
+}
+fieldset {
+    color: lightgray;
+}
+main {
+    background-color: #3a266c;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 600px;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center;
+}
+label {
+    font-size: large;
+    font-weight: bold;
+}
+input[type=text], input[type=number], input[type=date], input[type=tel], input[type=email], input[type=month] {
+    border-radius: 8px;
+    border:none;
+    width: 75%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    outline: none;
+    background-color: #00ce97;
+}
+#uf, #data, #num,#cod, #val {
+    width: 30%;
+}
+#cpf, #cid, #CEP {
+    width: 60%;
+}
+input[type=text]:focus, input[type=number]:focus, input[type=date]:focus, input[type=tel]:focus, input[type=email]:focus, input[type=month]:focus {
+    background-color: lightcyan;
+    border: #3a266c 2px solid;
+    border-radius: 8px;
+    -webkit-transition: 0.2;
+    transition: 0.2;
+    outline: none;
+}
+select {
+    border-radius: 8px;
+    border:none;
+    width: 58%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    outline: none;
+    background-color: #f10c49;
+}
+select:focus {
+    background-color: lightcyan;
+    border-radius: 8px;
+    border: #3a266c 2px solid;
+    -webkit-transition: 0.2;
+    transition: 0.2;
+    outline: none;
+}
+input[type=button], p.casa{
+    border: 3px solid #f10c49;
+    border-radius: 10px;
+    background-color: #f10c49;
+    padding: 8px 5px;
+    display: inline-block;
+    width: 25%;
+    height: 10%;
+    color: lightgoldenrodyellow;
+}

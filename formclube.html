@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Metamorfose</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-sacle=1.0">
+        <link rel="stylesheet" href="styleform.css">
+       
+    </head>
+    <body>
+        <main>
+        <form method="post">
+            <h4>Que bom que decidiu se juntar ao nosso clube! Espero que tenha experiências maravilhosas.
+                Siga os passos abaixos e seja feliz 
+            </h4><br>
+            <fieldset>
+              <h2>Informações Pessoais:</h2><br>
+               <label>Nome Completo:*</label>
+               <input type="text" id="nome" name="nome" required><br>
+               <label>CPF:*</label>
+               <input type="number" id="cpf" name="cpf" required maxlength="11"><br>
+               <label>Data de nascimento:*</label>
+               <input type="date" id="data" name="data" required><br><br>
+               <label>Endereço do doador:</label><br>
+               <label>CEP:*</label>
+               <input type="number" id="CEP" name="CEP" required maxlength="8"><br>
+               <label>Cidade:*</label>
+               <input type="text" id="cid" name="cid" required><br>
+               <label>Estado (UF):*</label>
+               <input type="text" id="uf" name="uf" required><br>
+               <label>Número:*</label> 
+               <input type="number" id="num" name="num" required><br>
+               <label>Logradouro:*</label>
+               <input type="text" id="log" name="log" required><br>
+               <label>Complemento:</label>
+               <input type="text" id="com" name="com"><br>
+               <label>Bairro:*</label>
+               <input type="text" id="bar" name="bar" required><br><BR>
+               <label>Telefone para contato:*</label>
+               <input type="tel" id="tel" name="tel" required><br>
+               <label>Poderia nos informar um telefone reserva?</label>
+               <input type="tel" id="tel2" name="tel2"><br>
+               <label>Email para contato:*</label>
+               <input type="email" id="email" name="email" required><br><br>
+            </fieldset>
+            <br>
+            <fieldset>
+            <br>
+              <h2>Detalhes da cobrança:</h2><br>
+               <label>Selecione a assinatura disponível:</label>
+               <select>
+                   <option>Os Uivadores - R$ 25,00 mensais</option>
+               </select>
+               <br><br>
+               <label>Selecione a forma de pagamento:</label>
+               <select>
+                   <option>Boleto Bancário</option>
+                   <option>Cartão de Crédito</option>
+               </select>
+               <br>
+               <h4>Preencha somente se sua opção for cartão de crédito*</h4>
+               <label>Nome do titular do cartão:</label>
+               <input type="text" id="namecar" name="namecar"><br>
+               <label>Número do cartão:</label>
+               <input type="number" id="car" name="car"><br>
+               <label>CVC/CVV:</label>
+               <input type="number" id="cod" name="cod">
+               <label>Validade:</label>
+               <input type="month" id="val" name="val" placeholder="MM/AAAA">
+               <br><br>
+               <label>Selecione uma data para a cobrança:</label>
+               <select>
+                  <option>05 de todo mês</option>
+                  <option>10 de todo mês</option>
+                  <option>15 de todo mês</option>
+               </select>
+               <br><br>
+               <input type="button" value="Enviar" onclick="alert('Obrigada por contribuir com nosso projeto! Foi enviado um email com seu boleto ou lembrete de cobrança do crédito.')">
+            </fieldset>
+        </form>
+        <br>
+        <a href="index_clube.html">
+          <p class="casa">
+              Início
+          </p>
+        </a>
+        </main>
+    </body>
+</html>
